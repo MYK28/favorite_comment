@@ -1,0 +1,2 @@
+$('.favorite-btn-<%= @book.id %>').html("<%= j(render partial: "favorites/favorite-btn", locals: {book: @book}) %>")
+<!-- cssと同じように使用するためclassの時は.で、idの時は#を$('の後に使用する -->
